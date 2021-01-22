@@ -1,0 +1,31 @@
+<div class="d-flex flex" id="content-body">
+    <div *ngIf="isActiveChat" class="d-flex flex-column flex" id="chat-list">
+        <div class="contact-nav b-b"> <span class="text-md text-ellipsis flex mx-1">{{userData?.Name}}</span></div>
+        <div class="scrollable hover">
+            <div class="p-3">
+                <div class="chat-list">
+                    <div class="chat-item" [ngClass]="{'admin': currentUser.UserId == obj.SenderId}" *ngFor="let obj of activeChatList">
+                        <a class="avatar w-40"></a>
+                        <div class="chat-body">
+                            <div class="chat-content rounded msg">{{obj?.TextMessage}}</div>
+                            <div class="chat-date date">{{obj?.CreatedDate | date: 'medium'}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message-input">
+            <div class="input-group mb-3">
+                <input [(ngModel)]="MessageModel.TextMessage" type="text" class="form-control" placeholder="Type a new message">
+                <div class="input-group-append"><button (click)="sendMessage()"
+                        class="btn btn-outline-secondary send-btn" type="button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!isActiveChat" class="d-flex flex-column flex" id="chat-list">
+        <div class="blank-chat">
+            <h5>Please select any user</h5>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="d-flex flex-column flex">
+    <div>
+        <div class="p-3 p-md-5">
+            <div class="card p-0 col-lg-8 offset-lg-2">
+                <div class="row no-gutters">
+                    <div class="col-md-6 bg-light">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <h4 class="mb-3 text-dark app-title">Simple Chat</h4>
+                            <div class="d-flex flex align-items-center justify-content-center">
+                                <div class="animate fadeIn">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="content-body">
+                        <div class="p-4">
+                            <h5>Welcome</h5>
+                            <div class="form-group"><label>Email</label><input [(ngModel)]="email" type="text"
+                                    class="form-control" placeholder="Enter email">
+                            </div>
+                            <div class="form-group"><label>Password</label><input [(ngModel)]="password" type="password"
+                                    class="form-control" placeholder="Password">
+                                <div class="my-3 text-right"><a class="text-muted">Forgot
+                                        password?</a></div>
+                            </div>
+                            <div class="checkbox mb-3"><label class="ui-check"><input type="checkbox"><i></i>
+                                    Remember
+                                    me</label></div>
+                            <button type="submit" (click)="login()" class="btn btn-primary mb-4">Sign
+                                in</button>
+                            <div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

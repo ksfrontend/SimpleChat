@@ -1,0 +1,135 @@
+.contact-nav {
+    padding: 14px 10px;
+}
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.form-control{
+    border: 1px solid #f6f7f8;
+}
+
+.message-input {
+    margin-right: 15px;
+    border-top: 1px solid #f6f7f8;
+    padding: 20px;
+}
+
+.flex-column {
+    flex-direction: column!important;
+}
+
+.b-b {
+    border-bottom: 1px solid rgba(135,150,165,.1);
+}
+
+.scrollable.hover {
+    overflow-y: hidden;
+}
+
+.scrollable.hover>* {
+    margin-top: -1px;
+}
+ 
+.chat-item {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+a:hover {
+    color: #005ac6;
+    text-decoration: underline;
+}
+
+.w-40 {
+    width: 40px!important;
+    height: 40px!important;
+}
+ 
+.chat-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.chat-item>* {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.chat-content {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: .5rem .75rem;
+    color: #647787;
+    background-color: #d9eaff!important;
+    margin-bottom: .25rem;
+}
+
+.rounded {
+    border-radius: .25rem!important;
+}
+
+.chat-date.date {
+    font-size: 11px;
+    color: #898989;
+}
+
+.chat-item.admin .chat-body .chat-content {
+    color: #647787;
+    background-color: #e5f5e1!important;
+}
+
+.chat-item.admin .chat-body {
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.chat-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.chat-item.admin {
+    -ms-flex-direction:row-reverse;
+    flex-direction:row-reverse
+}
+
+.send-btn{
+    border: 1px solid #e5f5e1
+}
+
+.send-btn:hover {
+    color: #000;
+    background-color: #eeeeee;
+    border-color: #cbcbcb;
+}
+
+.scrollable.hover {
+    min-height: 350px;
+}
+
+.blank-chat {
+    position: relative;
+    height: 300px;
+    h5 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    }
+}
+  
+ 

@@ -1,0 +1,24 @@
+<div class="aside">
+    <div class="d-flex flex-column w-xl b-r bg-white modal-dialog">
+        <!-- <div class="contact-nav b-b">
+            <div class="input-group flex">
+                <input type="text"
+                       (keyup)="onSearchUser($event)"
+                       class="form-control pl-2 px-0 no-bg no-border no-shadow search"
+                       placeholder="Search">
+            </div>
+        </div> -->
+        <div class="scrollable hover">
+            <div class="list list-row">
+                <div class="list-item" *ngFor="let obj of userList" (click)="openChat(obj)"
+                    [ngClass]="{'active': obj.id === selectedUser}">
+                    <div><span class="avatar-status" [ngClass]="{'on': obj.IsOnline, 'off' : !obj.IsOnline}"></span></div>
+                    <div class="flex user-name"><a class="item-author">{{obj?.Name}}</a>
+                    </div>
+                    <div><span *ngIf="obj.newMessages > 0"
+                            class="item-amount badge badge-pill bg-danger">{{obj?.newMessages}}</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

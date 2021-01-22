@@ -1,0 +1,2 @@
+C:\simplachatappapi\ChatApp.WebAPI\obj\Release\ChatApp.WebAPI.csprojAssemblyReference.cache
+C:\simplachatappapi\ChatApp.WebAPI\obj\Release\ChatApp.WebAPI.csproj.CoreCompileInputs.cache
